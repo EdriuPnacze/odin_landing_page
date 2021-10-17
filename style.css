@@ -11,12 +11,17 @@ body{
 
 header{
     background-color: #1F2937;
-    color:#F9FAF8;
-    font:24px;
+    padding: 15px 0;
     display:flex; 
 }
 
-header h1, header ul{
+#header-logo-text{
+    color:#F9FAF8;
+    font-size:24px;
+    font-weight: 900;
+}
+
+#header-logo-text, header ul{
     flex:1 1 0;
     text-align: center;
 }
@@ -36,41 +41,117 @@ header li{
 
 .awesome{
     background-color: #1F2937;
-    color:#F9FAF8;
-    font-size:28px;
     display:flex;
     flex:10 0 auto;
-    padding:80px;
+    font-size: 18px;
+    color:#E5E7EB;
+    padding:80px 10%;
     gap:30px;
+    justify-content: center;
+}
+
+#bigger-text{
+    color:#F9FAF8;
+    font-size:48px;
+    font-weight: 800;
 }
 
 .awesome-right{
     background-color: grey;
     width: 300px;
-    flex:1 0 0;
+    flex:1 0 auto;
+    max-width: 40%;
+
+}
+
+.awesome-right img{
+    width: inherit;
 }
 
 .awesome-left{
-    flex:1 0 0;
-    border:1px solid white;
+    flex:1 0 auto;
+    max-width: 40%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+
+
+.awesome-left > button{
+    background-color: #3882F6;
+    width:100px;
+    color:#F9FAF8;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin-left:15px;
 }
 
 .information{
     flex:10 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.information h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 1000;
+}
+
+.image{
+    border:4px blue solid;
+    border-radius: 10%;
+    width: 120px;
+    height: 120px;
+}
+
+.images-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 auto;
+    gap:60px;
+    font-size: 18px;
+    color:#1F2937;
+}
+
+.images-part{
+    text-align: center;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote{
     background-color: #E5E7EB;
     color: #1F2937;
-    font-size:24px;
+    font-size:36px;
     font-style: italic;
     font-weight: 300;
     flex:8 0 auto;
+    padding:40px 20%;
+    font-weight: lighter;
+}
+#author{
+    float:right;
+    font-weight: bold;
 }
 
 .sign-up{
     flex:6 0 auto;
-    
+}
+
+.sign-up-pop{
+    display:flex;
+    background-color: #3882F6;
+    margin:80px 10%;
+    padding: 100px;
 }
 
 footer{
