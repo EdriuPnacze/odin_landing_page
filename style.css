@@ -112,6 +112,7 @@ header li{
 
 .images-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex:1 1 auto;
@@ -152,6 +153,28 @@ header li{
     background-color: #3882F6;
     margin:80px 10%;
     padding: 100px;
+    color:#fff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+.sign-up-pop button{
+    background-color: #3882F6;
+    border:2px solid #fff;
+    border-radius: 10px;
+    padding:20px 40px;
+    font-weight:bold;
+    font-size: 18px;
+    color:#fff;
+    
+}
+
+.sign-up-pop button:hover{
+    background-color: #0e59db;
 }
 
 footer{
@@ -160,4 +183,7 @@ footer{
     margin-top:auto;
     height: 80px;
     flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
